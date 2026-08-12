@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Golden Leo Collection</title>
+  <meta name="description" content="Curated digital & physical products for creators, designers and small business owners." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="/" class="logo">Golden Leo Collection</a>
+      
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Curated products for creators & small businesses</h1>
+      <p>Ebooks, templates, courses and branded merchandise — carefully selected for designers, creators and entrepreneurs worldwide.</p>
+      <a href="#products" class="btn">Browse Collection</a>
+    </div>
+  </section>
+
+  <section id="products" class="products">
+    <div class="container">
+      <h2>Featured Products</h2>
+      <div class="product-grid">
+
+        <!-- Product 1 -->
+        <article class="product-card">
+          <div class="product-image">
+            <!-- Replace with real image later -->
+            <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=600&q=80" alt="Ebook" />
+          </div>
+          <div class="product-info">
+            <h3>Creator Business Blueprint</h3>
+            <p class="price">$29</p>
+            <p class="desc">Step-by-step system to turn your skills into a profitable digital product business.</p>
+            <a href="YOUR_STRIPE_OR_PAYSTACK_LINK" class="btn btn-small" target="_blank">Buy Now</a>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&q=80" alt="Template" />
+          </div>
+          <div class="product-info">
+            <h3>Brand Identity Kit</h3>
+            <p class="price">$49</p>
+            <p class="desc">Complete Canva + Figma brand kit templates for modern creators.</p>
+            <a href="YOUR_STRIPE_OR_PAYSTACK_LINK" class="btn btn-small" target="_blank">Buy Now</a>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&q=80" alt="Course" />
+          </div>
+          <div class="product-info">
+            <h3>Digital Product Mastery</h3>
+            <p class="price">$97</p>
+            <p class="desc">From idea to launch — full course on creating and selling digital products.</p>
+            <a href="YOUR_STRIPE_OR_PAYSTACK_LINK" class="btn btn-small" target="_blank">Buy Now</a>
+          </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600&q=80" alt="Hoodie" />
+          </div>
+          <div class="product-info">
+            <h3>Golden Leo Hoodie</h3>
+            <p class="price">$65</p>
+            <p class="desc">Premium embroidered hoodie for the Golden Leo community.</p>
+            <a href="YOUR_STRIPE_OR_PAYSTACK_LINK" class="btn btn-small" target="_blank">Buy Now</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Golden Leo Collection</h2>
+      <p>We carefully curate digital and physical products that help creators, designers and small business owners grow. Every item is chosen for quality, usefulness and style.</p>
+    </div>
+  </section>
+
+  <footer id="contact" class="footer">
+    <div class="container">
+      <p>© 2026 Golden Leo Collection. All rights reserved.</p>
+      <p>Questions? Email us at <a href="mailto:hello@goldenleocollection.com">hello@goldenleocollection.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      toggle.classList.toggle('active');
+    });
+  </script>
+</body>
+  </html>
